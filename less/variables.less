@@ -3,3 +3,16 @@
 @secondary-color: #98c1d9;
 @background-color: #293241;
 @text-color: #e0fbfc;
+
+//mixins
+
+.superPosition (@justify, @alignI) {
+  display: grid;
+  justify-content: @justify;
+  align-items: @alignI;
+  text-align: center;
+}
+
+.easeOut {
+  transition: all 0.2s ease-in;
+}
