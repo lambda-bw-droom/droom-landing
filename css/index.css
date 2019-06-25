@@ -263,7 +263,7 @@ img {
   padding: 1.5rem, 2.1rem;
   text-transform: uppercase;
 }
-.btn .btn-xl {
+.btn .btn-lg {
   font-size: 1rem;
   padding: 0.8rem, 1.3rem;
   text-transform: uppercase;
@@ -294,7 +294,7 @@ img {
     grid-template-columns: repeat(2, 1fr);
   }
   .btn-xl {
-    font-size: 5rem;
+    font-size: 1.5rem;
     padding: 1.4rem 2rem;
   }
   .text-xl {
