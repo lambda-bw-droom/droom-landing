@@ -207,7 +207,8 @@ img {
 
 .table tbody {
   display: table-row-group;
-  vertical-align: middle;const tabItems = document.querySelectorAll('.tab-item');
+  vertical-align: middle;
+  /* const tabItems = document.querySelectorAll('.tab-item');
   const tabContentItems = document.querySelectorAll('.tab-content-item');
   
   // Select tab content item
@@ -240,7 +241,7 @@ img {
   // Listen for tab item click
   tabItems.forEach(item => {
       item.addEventListener('click', selectItem);
-  });
+  }); */
   
   border-color: inherit;
 }
@@ -396,8 +397,10 @@ img {
   }
 
   .btn-xl {
-    font-size: 1.5rem;
-    padding: 1.4rem 2rem;
+    font-size: 2rem;
+    padding: .1rem 1.1rem;
+    display: flex;
+    align-items: center;
     text-transform: uppercase;
   }
 
