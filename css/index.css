@@ -136,8 +136,6 @@ img {
   width: 85%;
   /* Hide content initially */
 }
-<<<<<<< HEAD
-=======
 .tab-content #tab-2-content .tab-2-content-bottom img {
   height: 150px;
   width: auto;
@@ -148,7 +146,6 @@ img {
   border-radius: 16px;
   transition: all 0.2s ease-in;
 }
->>>>>>> 5f8c85d8ae33a6b25981074624a914ef5b76efc1
 .tab-content #tab-1-content,
 .tab-content #tab-2-content,
 .tab-content #tab-3-content {
@@ -181,24 +178,6 @@ img {
   margin-top: 2rem;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 2rem;
-}
-#myInput {
-  background-image: url("/css/searchicon.png");
-  /* Add a search icon to input */
-  background-position: 10px 12px;
-  /* Position the search icon */
-  background-repeat: no-repeat;
-  /* Do not repeat the icon image */
-  width: 100%;
-  /* Full-width */
-  font-size: 16px;
-  /* Increase font-size */
-  padding: 12px 20px 12px 40px;
-  /* Add some padding */
-  border: 1px solid #ddd;
-  /* Add a grey border */
-  margin-bottom: 12px;
-  /* Add some space below the input */
 }
 .table {
   width: 100%;
@@ -364,9 +343,6 @@ img {
     grid-template-columns: repeat(2, 1fr);
   }
   .btn-xl {
-<<<<<<< HEAD
-    font-size: 1.5rem;
-=======
     font-size: 2rem;
     padding: 1.4rem 2rem;
   }
@@ -403,7 +379,6 @@ img {
   }
   .btn-xl {
     font-size: 2rem;
->>>>>>> 5f8c85d8ae33a6b25981074624a914ef5b76efc1
     padding: 1.4rem 2rem;
   }
   .text-xl {
