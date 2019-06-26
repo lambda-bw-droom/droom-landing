@@ -129,6 +129,11 @@ img {
   width: 85%;
   /* Hide content initially */
 }
+.tab-content img {
+  height: 150px;
+  width: auto;
+  border-radius: 100px;
+}
 .tab-content #tab-1-content,
 .tab-content #tab-2-content,
 .tab-content #tab-3-content {
@@ -236,6 +241,7 @@ img {
 }
 .text-dark {
   color: #98c1d9;
+  padding-bottom: 3rem;
 }
 .btn {
   display: inline-block;
