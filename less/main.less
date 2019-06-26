@@ -147,12 +147,6 @@ img {
   margin: auto;
   width: 85%;
 
-  img {
-    height: 150px;
-    width: auto;
-    border-radius: 100px;
-  }
-
   /* Hide content initially */
   #tab-1-content,
   #tab-2-content,
@@ -180,6 +174,17 @@ img {
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 2rem;
   }
+}
+
+#myInput {
+  background-image: url("/css/searchicon.png"); /* Add a search icon to input */
+  background-position: 10px 12px; /* Position the search icon */
+  background-repeat: no-repeat; /* Do not repeat the icon image */
+  width: 100%; /* Full-width */
+  font-size: 16px; /* Increase font-size */
+  padding: 12px 20px 12px 40px; /* Add some padding */
+  border: 1px solid #ddd; /* Add a grey border */
+  margin-bottom: 12px; /* Add some space below the input */
 }
 
 //Table
@@ -280,7 +285,6 @@ img {
 
 .text-dark {
   color: @secondary-color;
-  padding-bottom: 3rem;
 }
 
 //buttons
@@ -289,8 +293,8 @@ img {
   display: inline-block;
   background: @primary-color;
   color: @text-color;
-  padding: 0.4rem 1.3rem;
-  font-size: 1rem;
+  padding: 0.8rem 1.7rem;
+  font-size: 1.2rem;
   text-align: center;
   border: none;
   cursor: pointer;

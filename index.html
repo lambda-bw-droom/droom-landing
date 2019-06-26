@@ -78,13 +78,21 @@
         <!-- Tab Content 2 -->
         <div id="tab-2-content" class="tab-content-item animated fadeIn">
           <div class="tab-2-content-top">
-            <p class="text-lg">
-              Meet the team
-            </p>
+            <div class="teamFilter">
+              <p class="text-lg">
+                Meet the team
+              </p>
+              <input
+                type="text"
+                id="myInput"
+                onkeyup="nameFilter()"
+                placeholder="Search Here.."
+              />
+            </div>
           </div>
           <div class="tab-2-content-bottom animated bounceInUp">
             <div></div>
-            <div>
+            <div class="devTeamMemb">
               <img src="img/team/ryan.png" class="tl-img teamImg" alt="ryan" />
 
               <p class="text-dark">
@@ -93,7 +101,7 @@
               </p>
             </div>
             <div></div>
-            <div>
+            <div class="devTeamMemb">
               <img src="img/team/Yemi.png" alt="yemi" class="teamImg" />
 
               <p class="text-dark">
@@ -101,7 +109,7 @@
                 Sulaiman 'Yemi' Abidemi
               </p>
             </div>
-            <div>
+            <div class="devTeamMemb">
               <img src="img/team/jaytee.png" alt="jaytee" class="teamImg" />
 
               <p class="text-dark">
@@ -109,7 +117,7 @@
                 Jaytee Padilla
               </p>
             </div>
-            <div>
+            <div class="devTeamMemb">
               <img src="img/team/cash.png" alt="cash" class="teamImg" />
 
               <p class="text-dark">
@@ -117,14 +125,14 @@
                 Cash Globe
               </p>
             </div>
-            <div>
+            <div class="devTeamMemb">
               <img src="img/team/anthony.png" alt="anthony" class="teamImg" />
               <p class="text-dark">
                 Web UI Developer: <br />
                 Anthony Rende
               </p>
             </div>
-            <div>
+            <div class="devTeamMemb">
               <img src="img/team/deejay.jpg" alt="deejay" class="teamImg" />
 
               <p class="text-dark">
@@ -132,8 +140,8 @@
                 Donald Easter
               </p>
             </div>
-            <div>
-              <img src="img/team/connor.png" alt="conor" class="teamImg" />
+            <div class="devTeamMemb">
+              <img src="img/team/connor.png" alt="connor" class="teamImg" />
 
               <p class="text-dark">
                 Web UI Developer:<br />

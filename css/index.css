@@ -129,11 +129,6 @@ img {
   width: 85%;
   /* Hide content initially */
 }
-.tab-content img {
-  height: 150px;
-  width: auto;
-  border-radius: 100px;
-}
 .tab-content #tab-1-content,
 .tab-content #tab-2-content,
 .tab-content #tab-3-content {
@@ -166,6 +161,24 @@ img {
   margin-top: 2rem;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 2rem;
+}
+#myInput {
+  background-image: url("/css/searchicon.png");
+  /* Add a search icon to input */
+  background-position: 10px 12px;
+  /* Position the search icon */
+  background-repeat: no-repeat;
+  /* Do not repeat the icon image */
+  width: 100%;
+  /* Full-width */
+  font-size: 16px;
+  /* Increase font-size */
+  padding: 12px 20px 12px 40px;
+  /* Add some padding */
+  border: 1px solid #ddd;
+  /* Add a grey border */
+  margin-bottom: 12px;
+  /* Add some space below the input */
 }
 .table {
   width: 100%;
@@ -241,14 +254,13 @@ img {
 }
 .text-dark {
   color: #98c1d9;
-  padding-bottom: 3rem;
 }
 .btn {
   display: inline-block;
   background: #ee6c4d;
   color: #e0fbfc;
-  padding: 0.4rem 1.3rem;
-  font-size: 1rem;
+  padding: 0.8rem 1.7rem;
+  font-size: 1.2rem;
   text-align: center;
   border: none;
   cursor: pointer;
