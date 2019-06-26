@@ -105,6 +105,7 @@ img {
 }
 
 // tabs
+
 .tabs {
   background: @background-color;
   padding-top: 1rem;
@@ -122,15 +123,16 @@ img {
     overflow: hidden;
     padding: 0 2rem;
 
+    @media @mobile {
+      display: flex;
+      justify-content: space-between;
+      padding: 0;
+    }
+
     div:hover {
       color: @primary-color;
       cursor: pointer;
       .easeOut;
-
-      // @media @mobile {
-      //   max-width: 50%;
-      //   padding: 0 1rem;
-      // }
     }
   }
 
@@ -323,17 +325,63 @@ img {
     font-size: 1rem;
     padding: 0.8rem, 1.3rem;
     text-transform: uppercase;
-
-    @media @mobile {
-      padding: 0.3rem 0.5rem;
-      font-size: 0.6rem;
-    }
   }
 }
-
+//Tablet
 @media @tablet {
   .showcase {
     height: 95vh;
+  }
+
+  .tabs {
+    padding-bottom: 0.1rem;
+  }
+
+  .hide-sm {
+    display: none;
+  }
+
+  .showcase .showcase-top img {
+    top: 52%;
+    left: 18%;
+    // transform: translate(0);
+  }
+
+  .showcase-content {
+    h1 {
+      font-size: 3.7rem;
+      line-height: 1;
+    }
+
+    p {
+      font-size: 1.5rem;
+    }
+  }
+
+  .footer .footer-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .btn-xl {
+    font-size: 2rem;
+    padding: 1.4rem 2rem;
+  }
+
+  .text-xl {
+    font-size: 1.5rem;
+  }
+
+  .text-lg {
+    font-size: 1.3rem;
+  }
+
+  .text-md {
+    font-size: 1rem;
+  }
+}
+// Mobile Header
+@media @mobile {
+  .showcase {
+    height: 120vh;
   }
 
   .tabs {

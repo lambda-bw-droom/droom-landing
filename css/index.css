@@ -109,6 +109,13 @@ img {
   overflow: hidden;
   padding: 0 2rem;
 }
+@media (max-width: 500px) {
+  .tabs .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+  }
+}
 .tabs .container div:hover {
   color: #ee6c4d;
   cursor: pointer;
@@ -274,15 +281,47 @@ img {
   padding: 0.8rem, 1.3rem;
   text-transform: uppercase;
 }
-@media (max-width: 500px) {
-  .btn .btn-lg {
-    padding: 0.3rem 0.5rem;
-    font-size: 0.6rem;
-  }
-}
 @media (max-width: 960px) {
   .showcase {
     height: 95vh;
+  }
+  .tabs {
+    padding-bottom: 0.1rem;
+  }
+  .hide-sm {
+    display: none;
+  }
+  .showcase .showcase-top img {
+    top: 52%;
+    left: 18%;
+  }
+  .showcase-content h1 {
+    font-size: 3.7rem;
+    line-height: 1;
+  }
+  .showcase-content p {
+    font-size: 1.5rem;
+  }
+  .footer .footer-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .btn-xl {
+    font-size: 2rem;
+    padding: 1.4rem 2rem;
+  }
+  .text-xl {
+    font-size: 1.5rem;
+  }
+  .text-lg {
+    font-size: 1.3rem;
+  }
+  .text-md {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 500px) {
+  .showcase {
+    height: 120vh;
   }
   .tabs {
     padding-bottom: 0.1rem;
