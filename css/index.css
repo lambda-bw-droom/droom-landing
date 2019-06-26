@@ -136,9 +136,20 @@ img {
   width: 85%;
   /* Hide content initially */
 }
+.tab-content #tab-1-content .tab-1-content-inner {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 15rem;
+}
+.tab-content #tab-1-content .tab-1-content-inner img {
+  border-radius: 50px;
+}
 .tab-content #tab-2-content .tab-2-content-bottom img {
   height: 150px;
-  width: auto;
+  width: 150px;
   border: #ee6c4d 3px solid;
   border-radius: 100px;
 }
@@ -154,14 +165,6 @@ img {
 .tab-content .show {
   display: block !important;
 }
-.tab-content #tab-1-content .tab-1-content-inner {
-  display: grid;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 15rem;
-}
 .tab-content #tab-2-content .tab-2-content-top {
   display: grid;
   justify-content: center;
@@ -170,7 +173,14 @@ img {
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 1rem;
 }
-.tab-content #tab-2-content .tab-2-content-bottom {
+.tab-content #tab-2-content .tab-2-content-bottom .teamLead {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  grid-template-columns: repeat(1);
+}
+.tab-content #tab-2-content .tab-2-content-bottom .team {
   display: grid;
   justify-content: center;
   align-items: center;
@@ -259,15 +269,15 @@ img {
   display: inline-block;
   background: #ee6c4d;
   color: #e0fbfc;
-  padding: 0.4rem 1.3rem;
-  font-size: 1rem;
+  padding: 0.4rem 1.6rem;
+  font-size: 1.5rem;
   text-align: center;
   border: none;
   cursor: pointer;
   margin-right: 0.5rem;
   outline: none;
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.45);
-  border-radius: 2px;
+  border-radius: 5px;
 }
 .btn:hover {
   opacity: 0.8;
@@ -290,8 +300,8 @@ img {
   .showcase {
     height: 95vh;
   }
-  .tabs {
-    padding-bottom: 0.1rem;
+  .tab-border {
+    padding: 0.2rem 0 0.2rem 0;
   }
   .hide-sm {
     display: none;
@@ -301,16 +311,37 @@ img {
     left: 18%;
   }
   .showcase-content h1 {
-    font-size: 3.7rem;
+    font-size: 2.2rem;
     line-height: 1;
   }
   .showcase-content p {
     font-size: 1.5rem;
   }
+  .tab-content #tab-2-content .tab-2-content-bottom .team {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+  }
+  .tab-content #tab-1-content .tab-1-content-inner {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .tab-content #tab-1-content .tab-1-content-inner img {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
   .tab-content {
     padding: 1rem 0;
     margin: auto;
-    width: 55%;
+    width: 75%;
   }
   .tab-content .tab-content .container {
     display: flex;
@@ -323,7 +354,6 @@ img {
     justify-content: center;
     align-items: center;
     text-align: center;
-    width: 120%;
     padding: 1px 25px 0px 11px;
   }
   .tab-content #tab-2-content .tab-2-content-top {
@@ -331,13 +361,20 @@ img {
     grid-gap: 1rem;
     padding: 0.5rem 0.6rem;
   }
-  .tab-content #tab-2-content .tab-2-content-bottom {
+  .tab-content #tab-2-content .tab-2-content-bottom .teamLead {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .tab-content #tab-2-content .tab-2-content-bottom .team {
     display: grid;
     justify-content: center;
     align-items: center;
     text-align: center;
     margin-top: 2rem;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: 2rem;
   }
   .footer .footer-cols {
@@ -359,7 +396,14 @@ img {
 }
 @media (max-width: 500px) {
   .showcase {
-    height: 120vh;
+    height: 100vh;
+  }
+  .showcase .showcase-content h1 {
+    font-size: 7.7rem;
+    line-height: 1;
+  }
+  .showcase .showcase-content p {
+    display: none;
   }
   .tabs {
     padding-bottom: 0.1rem;
@@ -370,13 +414,6 @@ img {
   .showcase .showcase-top img {
     top: 52%;
     left: 18%;
-  }
-  .showcase-content h1 {
-    font-size: 3.7rem;
-    line-height: 1;
-  }
-  .showcase-content p {
-    font-size: 1.5rem;
   }
   .btn-xl {
     font-size: 2rem;
