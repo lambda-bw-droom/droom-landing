@@ -154,10 +154,16 @@ img {
   margin: auto;
   width: 85%;
 
-  img {
+  #tab-2-content .tab-2-content-bottom img {
     height: 150px;
     width: auto;
+    border: @primary-color 3px solid;
     border-radius: 100px;
+
+    &:hover {
+      border-radius: 16px;
+      .easeOut;
+    }
   }
 
   /* Hide content initially */

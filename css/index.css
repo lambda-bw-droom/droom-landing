@@ -136,10 +136,15 @@ img {
   width: 85%;
   /* Hide content initially */
 }
-.tab-content img {
+.tab-content #tab-2-content .tab-2-content-bottom img {
   height: 150px;
   width: auto;
+  border: #ee6c4d 3px solid;
   border-radius: 100px;
+}
+.tab-content #tab-2-content .tab-2-content-bottom img:hover {
+  border-radius: 16px;
+  transition: all 0.2s ease-in;
 }
 .tab-content #tab-1-content,
 .tab-content #tab-2-content,
