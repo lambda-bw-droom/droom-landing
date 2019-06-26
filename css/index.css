@@ -163,98 +163,105 @@ img {
   grid-gap: 15rem;
 }
 .tab-content #tab-2-content .tab-2-content-top {
-  display: grid;
+  display: flex;
   justify-content: center;
-  align-items: center;
-  text-align: center;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 1rem;
 }
 .tab-content #tab-2-content .tab-2-content-bottom {
-  display: grid;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  margin-top: 2rem;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 2rem;
+  display: flex;
+  flex-direction: column;
 }
-.table {
+.tab-content #tab-2-content .tab-2-content-bottom .teamLeadWrapper {
+  display: flex;
+  justify-content: center;
+}
+.tab-content #tab-2-content .tab-2-content-bottom .teamWrapper {
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row wrap;
+  width: 100%;
+  padding-top: 50px;
+}
+@media (max-width: 800px) {
+  .tab-content #tab-2-content .tab-2-content-bottom .teamWrapper .teamWrapper {
+    flex-flow: column nowrap;
+    width: 25%;
+  }
+}
+.tab-content .table {
   width: 100%;
   margin-top: 2rem;
   border-collapse: collapse;
   border-spacing: 0;
 }
-.table thead th {
+.tab-content .table thead th {
   text-transform: uppercase;
   padding: 0.8rem;
 }
-.table tbody {
+.tab-content .table tbody {
   display: table-row-group;
   vertical-align: middle;
   border-color: inherit;
 }
-.table tbody tr:nth-child(odd) {
+.tab-content .table tbody tr:nth-child(odd) {
   background: #222;
 }
-.table tbody tr td {
+.tab-content .table tbody tr td {
   color: #999;
   padding: 0.8rem 1.2rem;
   text-align: center;
 }
-.table tbody tr td:first-child {
+.tab-content .table tbody tr td:first-child {
   text-align: left;
 }
-.foot-container {
+.tab-content .foot-container {
   background: #293241;
   border-top: 3px solid #3d3d3d;
 }
-.foot-container .footer {
+.tab-content .foot-container .footer {
   max-width: 75%;
   margin: 1rem auto;
   overflow: auto;
   background: #293241;
 }
-.foot-container .footer a {
+.tab-content .foot-container .footer a {
   color: #e0fbfc;
   font-size: 0.9rem;
 }
-.foot-container .footer a:hover {
+.tab-content .foot-container .footer a:hover {
   color: #ee6c4d;
 }
-.foot-container .footer p {
+.tab-content .foot-container .footer p {
   margin-bottom: 5rem;
 }
-.foot-container .footer .footer-cols {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 2rem;
+.tab-content .foot-container .footer .footer-cols {
+  display: flex;
+  flex-direction: row;
 }
-.foot-container .footer li {
+.tab-content .foot-container .footer li {
   line-height: 1.9rem;
 }
-.text-xl {
+.tab-content .text-xl {
   font-size: 2rem;
   margin-bottom: 1rem;
 }
-.text-lg {
+.tab-content .text-lg {
   font-size: 1.8rem;
   margin-bottom: 1rem;
 }
-.text-sm {
+.tab-content .text-sm {
   width: 100%;
   font-size: 1.1rem;
   text-align: left;
   padding-bottom: 2rem;
   color: #e0fbfc;
 }
-.text-center {
+.tab-content .text-center {
   text-align: center;
 }
-.text-dark {
+.tab-content .text-dark {
   color: #98c1d9;
 }
-.btn {
+.tab-content .btn {
   display: inline-block;
   background: #ee6c4d;
   color: #e0fbfc;
@@ -268,131 +275,22 @@ img {
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.45);
   border-radius: 2px;
 }
-.btn:hover {
+.tab-content .btn:hover {
   opacity: 0.8;
   transition: all 0.2s ease-in;
 }
-.btn .btn-rounded {
+.tab-content .btn .btn-rounded {
   border-radius: 5px;
 }
-.btn .btn-xl {
+.tab-content .btn .btn-xl {
   font-size: 2rem;
   padding: 1.5rem, 2.1rem;
   text-transform: uppercase;
 }
-.btn .btn-lg {
+.tab-content .btn .btn-lg {
   font-size: 1rem;
   padding: 0.8rem, 1.3rem;
   text-transform: uppercase;
-}
-@media (max-width: 800px) {
-  .showcase {
-    height: 95vh;
-  }
-  .tabs {
-    padding-bottom: 0.1rem;
-  }
-  .hide-sm {
-    display: none;
-  }
-  .showcase .showcase-top img {
-    top: 52%;
-    left: 18%;
-  }
-  .showcase-content h1 {
-    font-size: 3.7rem;
-    line-height: 1;
-  }
-  .showcase-content p {
-    font-size: 1.5rem;
-  }
-  .tab-content {
-    padding: 1rem 0;
-    margin: auto;
-    width: 55%;
-  }
-  .tab-content .tab-content .container {
-    display: flex;
-  }
-  .tab-content #tab-1-content .tab-1-content-inner img {
-    display: none;
-  }
-  .tab-content #tab-1-content .tab-1-content-inner {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    width: 120%;
-    padding: 1px 25px 0px 11px;
-  }
-  .tab-content #tab-2-content .tab-2-content-top {
-    grid-template-columns: repeat(1, 1fr);
-    grid-gap: 1rem;
-    padding: 0.5rem 0.6rem;
-  }
-  .tab-content #tab-2-content .tab-2-content-bottom {
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin-top: 2rem;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 2rem;
-  }
-  .footer .footer-cols {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .btn-xl {
-    font-size: 2rem;
-    padding: 1.4rem 2rem;
-  }
-  .text-xl {
-    font-size: 1.5rem;
-  }
-  .text-lg {
-    font-size: 1.3rem;
-  }
-  .text-md {
-    font-size: 1rem;
-  }
-}
-@media (max-width: 500px) {
-  .showcase {
-    height: 120vh;
-  }
-  .tabs {
-    padding-bottom: 0.1rem;
-  }
-  .hide-sm {
-    display: none;
-  }
-  .showcase .showcase-top img {
-    top: 52%;
-    left: 18%;
-  }
-  .showcase-content h1 {
-    font-size: 3.7rem;
-    line-height: 1;
-  }
-  .showcase-content p {
-    font-size: 1.5rem;
-  }
-  .btn-xl {
-    font-size: 2rem;
-    padding: 1.4rem 2rem;
-  }
-  .text-xl {
-    font-size: 1.5rem;
-  }
-  .text-lg {
-    font-size: 1.3rem;
-  }
-  .text-md {
-    font-size: 1rem;
-  }
-  .foot-container .footer .footer-cols {
-    grid-template-columns: repeat(2, 1fr);
-  }
 }
 @keyframes move-twink-back {
   from {
@@ -410,9 +308,9 @@ img {
     background-position: 10000px 0;
   }
 }
-.stars,
-.twinkling,
-.clouds {
+.tab-content .stars,
+.tab-content .twinkling,
+.tab-content .clouds {
   position: absolute;
   top: 0;
   left: 0;
@@ -422,16 +320,16 @@ img {
   height: 100%;
   display: block;
 }
-.stars {
+.tab-content .stars {
   background: #000 url(../img/stars.png) repeat top center;
   z-index: 3;
 }
-.twinkling {
+.tab-content .twinkling {
   background: transparent url(../img/twinkling.png) repeat top center;
   z-index: 3;
   animation: move-twink-back 200s linear infinite;
 }
-.clouds {
+.tab-content .clouds {
   background: transparent url(../img/clouds1.png) repeat top center;
   z-index: 3;
   animation: move-clouds-back 200s linear infinite;
