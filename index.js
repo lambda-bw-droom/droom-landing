@@ -19,3 +19,8 @@ function removeShow() {
 }
 // Listen for tab click
 tabItems.forEach(item => item.addEventListener("click", selectItem));
+
+const tabContentImg = document.querySelectorAll(".teamImg");
+tabContentImg.addEventListener("click", img =>
+  img.classList.toggle("animated flipInX")
+);
