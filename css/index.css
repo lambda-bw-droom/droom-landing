@@ -310,6 +310,9 @@ img {
   .tab-content .tab-content .container {
     display: flex;
   }
+  .tab-content #tab-1-content .tab-1-content-inner img {
+    display: none;
+  }
   .tab-content #tab-1-content .tab-1-content-inner {
     display: flex;
     justify-content: center;
