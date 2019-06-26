@@ -281,7 +281,7 @@ img {
   padding: 0.8rem, 1.3rem;
   text-transform: uppercase;
 }
-@media (max-width: 960px) {
+@media (max-width: 800px) {
   .showcase {
     height: 95vh;
   }
@@ -322,12 +322,9 @@ img {
     padding: 1px 25px 0px 11px;
   }
   .tab-content #tab-2-content .tab-2-content-top {
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     grid-gap: 1rem;
+    padding: 0.5rem 0.6rem;
   }
   .tab-content #tab-2-content .tab-2-content-bottom {
     display: grid;
