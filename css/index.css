@@ -274,9 +274,15 @@ img {
   padding: 0.8rem, 1.3rem;
   text-transform: uppercase;
 }
+@media (max-width: 500px) {
+  .btn .btn-lg {
+    padding: 0.3rem 0.5rem;
+    font-size: 0.6rem;
+  }
+}
 @media (max-width: 960px) {
   .showcase {
-    height: 70vh;
+    height: 95vh;
   }
   .tabs {
     padding-bottom: 0.1rem;
@@ -300,7 +306,7 @@ img {
     grid-template-columns: repeat(2, 1fr);
   }
   .btn-xl {
-    font-size: 5rem;
+    font-size: 2rem;
     padding: 1.4rem 2rem;
   }
   .text-xl {
