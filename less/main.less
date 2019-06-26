@@ -154,9 +154,19 @@ img {
   margin: auto;
   width: 85%;
 
+  #tab-1-content .tab-1-content-inner {
+    .superPosition(center, center);
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 15rem;
+  }
+
+  #tab-1-content .tab-1-content-inner img {
+    border-radius: 50px;
+  }
+
   #tab-2-content .tab-2-content-bottom img {
     height: 150px;
-    width: auto;
+    width: 150px;
     border: @primary-color 3px solid;
     border-radius: 100px;
 
@@ -176,18 +186,16 @@ img {
     display: block !important;
   }
 
-  #tab-1-content .tab-1-content-inner {
-    .superPosition(center, center);
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 15rem;
-  }
-
   #tab-2-content .tab-2-content-top {
     .superPosition(center, center);
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 1rem;
   }
-  #tab-2-content .tab-2-content-bottom {
+  #tab-2-content .tab-2-content-bottom .teamLead {
+    .superPosition(center, center);
+    grid-template-columns: repeat(1);
+  }
+  #tab-2-content .tab-2-content-bottom .team {
     .superPosition(center, center);
     margin-top: 2rem;
     grid-template-columns: repeat(3, 1fr);
@@ -301,15 +309,17 @@ img {
   display: inline-block;
   background: @primary-color;
   color: @text-color;
-  padding: 0.8rem 1.9rem;
-  font-size: 1.6rem;
+
+  padding: 0.4rem 1.6rem;
+  font-size: 1.5rem;
+
   text-align: center;
   border: none;
   cursor: pointer;
   margin-right: 0.5rem;
   outline: none;
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.45);
-  border-radius: 2px;
+  border-radius: 5px;
 
   &:hover {
     opacity: 0.8;
@@ -338,8 +348,8 @@ img {
     height: 95vh;
   }
 
-  .tabs {
-    padding-bottom: 0.1rem;
+  .tab-border {
+    padding: 0.2rem 0 0.2rem 0;
   }
 
   .hide-sm {
@@ -354,7 +364,7 @@ img {
 
   .showcase-content {
     h1 {
-      font-size: 3.7rem;
+      font-size: 2.2rem;
       line-height: 1;
     }
 
@@ -363,11 +373,31 @@ img {
     }
   }
 
-  //Mobile Tab Content
+  .tab-content {
+    #tab-2-content .tab-2-content-bottom .team {
+      .superPosition(center, center);
+      margin-top: 2rem;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 2rem;
+    }
+  }
+
+  .tab-content #tab-1-content .tab-1-content-inner {
+    .superPosition(center, center);
+    grid-template-columns: repeat(1, 1fr);
+
+    img {
+      display: none;
+    }
+  }
+}
+
+//Mobile Tab Content
+@media @mobile {
   .tab-content {
     padding: 1rem 0;
     margin: auto;
-    width: 55%;
+    width: 75%;
 
     .tab-content .container {
       display: flex;
@@ -382,7 +412,7 @@ img {
       justify-content: center;
       align-items: center;
       text-align: center;
-      width: 120%;
+      // width: 120%;
       padding: 1px 25px 0px 11px;
     }
 
@@ -391,10 +421,14 @@ img {
       grid-gap: 1rem;
       padding: 0.5rem 0.6rem;
     }
-    #tab-2-content .tab-2-content-bottom {
+    #tab-2-content .tab-2-content-bottom .teamLead {
+      .superPosition(center, center);
+      grid-template-columns: repeat(1, 1fr);
+    }
+    #tab-2-content .tab-2-content-bottom .team {
       .superPosition(center, center);
       margin-top: 2rem;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(2, 1fr);
       grid-gap: 2rem;
     }
   }
@@ -422,7 +456,19 @@ img {
 // Mobile Header
 @media @mobile {
   .showcase {
-    height: 120vh;
+    height: 100vh;
+
+    .showcase-content {
+      h1 {
+        font-size: 7.7rem;
+        line-height: 1;
+        // padding-bottom: 3rem;
+      }
+
+      p {
+        display: none;
+      }
+    }
   }
 
   .tabs {
@@ -437,17 +483,6 @@ img {
     top: 52%;
     left: 18%;
     // transform: translate(0);
-  }
-
-  .showcase-content {
-    h1 {
-      font-size: 3.7rem;
-      line-height: 1;
-    }
-
-    p {
-      font-size: 1.5rem;
-    }
   }
 
   .btn-xl {
