@@ -80,9 +80,9 @@ img {
 }
 .showcase .showcase-content h1 {
   font-weight: 500;
-  font-size: 5.8rem;
+  font-size: 6.8rem;
   line-height: 1.1;
-  margin: 0 0 2rem;
+  margin: 0 0 1rem;
 }
 .showcase .showcase-content p {
   text-transform: uppercase;
@@ -258,8 +258,8 @@ img {
   display: inline-block;
   background: #ee6c4d;
   color: #e0fbfc;
-  padding: 0.8rem 1.7rem;
-  font-size: 1.2rem;
+  padding: 0.8rem 1.9rem;
+  font-size: 1.6rem;
   text-align: center;
   border: none;
   cursor: pointer;
