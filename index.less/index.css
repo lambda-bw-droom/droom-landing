@@ -109,13 +109,6 @@ img {
   overflow: hidden;
   padding: 0 2rem;
 }
-@media (max-width: 500px) {
-  .tabs .container {
-    display: flex;
-    justify-content: space-between;
-    padding: 0;
-  }
-}
 .tabs .container div:hover {
   color: #ee6c4d;
   cursor: pointer;
@@ -136,19 +129,6 @@ img {
   width: 85%;
   /* Hide content initially */
 }
-<<<<<<< HEAD
-=======
-.tab-content #tab-2-content .tab-2-content-bottom img {
-  height: 150px;
-  width: auto;
-  border: #ee6c4d 3px solid;
-  border-radius: 100px;
-}
-.tab-content #tab-2-content .tab-2-content-bottom img:hover {
-  border-radius: 16px;
-  transition: all 0.2s ease-in;
-}
->>>>>>> 5f8c85d8ae33a6b25981074624a914ef5b76efc1
 .tab-content #tab-1-content,
 .tab-content #tab-2-content,
 .tab-content #tab-3-content {
@@ -181,24 +161,6 @@ img {
   margin-top: 2rem;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 2rem;
-}
-#myInput {
-  background-image: url("/css/searchicon.png");
-  /* Add a search icon to input */
-  background-position: 10px 12px;
-  /* Position the search icon */
-  background-repeat: no-repeat;
-  /* Do not repeat the icon image */
-  width: 100%;
-  /* Full-width */
-  font-size: 16px;
-  /* Increase font-size */
-  padding: 12px 20px 12px 40px;
-  /* Add some padding */
-  border: 1px solid #ddd;
-  /* Add a grey border */
-  margin-bottom: 12px;
-  /* Add some space below the input */
 }
 .table {
   width: 100%;
@@ -279,8 +241,8 @@ img {
   display: inline-block;
   background: #ee6c4d;
   color: #e0fbfc;
-  padding: 0.8rem 1.7rem;
-  font-size: 1.2rem;
+  padding: 0.4rem 1.3rem;
+  font-size: 1rem;
   text-align: center;
   border: none;
   cursor: pointer;
@@ -306,9 +268,9 @@ img {
   padding: 0.8rem, 1.3rem;
   text-transform: uppercase;
 }
-@media (max-width: 800px) {
+@media (max-width: 960px) {
   .showcase {
-    height: 95vh;
+    height: 70vh;
   }
   .tabs {
     padding-bottom: 0.1rem;
@@ -316,9 +278,10 @@ img {
   .hide-sm {
     display: none;
   }
-  .showcase .showcase-top img {
-    top: 52%;
-    left: 18%;
+  .showcase-top img {
+    top: 30%;
+    left: 5%;
+    transform: translate(0);
   }
   .showcase-content h1 {
     font-size: 3.7rem;
@@ -326,48 +289,12 @@ img {
   }
   .showcase-content p {
     font-size: 1.5rem;
-  }
-  .tab-content {
-    padding: 1rem 0;
-    margin: auto;
-    width: 55%;
-  }
-  .tab-content .tab-content .container {
-    display: flex;
-  }
-  .tab-content #tab-1-content .tab-1-content-inner img {
-    display: none;
-  }
-  .tab-content #tab-1-content .tab-1-content-inner {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    width: 120%;
-    padding: 1px 25px 0px 11px;
-  }
-  .tab-content #tab-2-content .tab-2-content-top {
-    grid-template-columns: repeat(1, 1fr);
-    grid-gap: 1rem;
-    padding: 0.5rem 0.6rem;
-  }
-  .tab-content #tab-2-content .tab-2-content-bottom {
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin-top: 2rem;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 2rem;
   }
   .footer .footer-cols {
     grid-template-columns: repeat(2, 1fr);
   }
   .btn-xl {
-<<<<<<< HEAD
-    font-size: 1.5rem;
-=======
-    font-size: 2rem;
+    font-size: 5rem;
     padding: 1.4rem 2rem;
   }
   .text-xl {
@@ -378,45 +305,6 @@ img {
   }
   .text-md {
     font-size: 1rem;
-  }
-}
-@media (max-width: 500px) {
-  .showcase {
-    height: 120vh;
-  }
-  .tabs {
-    padding-bottom: 0.1rem;
-  }
-  .hide-sm {
-    display: none;
-  }
-  .showcase .showcase-top img {
-    top: 52%;
-    left: 18%;
-  }
-  .showcase-content h1 {
-    font-size: 3.7rem;
-    line-height: 1;
-  }
-  .showcase-content p {
-    font-size: 1.5rem;
-  }
-  .btn-xl {
-    font-size: 2rem;
->>>>>>> 5f8c85d8ae33a6b25981074624a914ef5b76efc1
-    padding: 1.4rem 2rem;
-  }
-  .text-xl {
-    font-size: 1.5rem;
-  }
-  .text-lg {
-    font-size: 1.3rem;
-  }
-  .text-md {
-    font-size: 1rem;
-  }
-  .foot-container .footer .footer-cols {
-    grid-template-columns: repeat(2, 1fr);
   }
 }
 @keyframes move-twink-back {
