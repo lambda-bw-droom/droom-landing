@@ -1,0 +1,55 @@
+.bg-modal {
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 5;
+}
+
+.modal-contents {
+  height: 400px;
+  width: 300px;
+  background-color: @background-color;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  border-radius: 4px;
+
+  img {
+    width: 55%;
+  }
+
+  .submitBtn {
+    padding-top: 2rem;
+    font-size: 1.2rem;
+
+    &:hover {
+      color: @primary-color;
+    }
+  }
+}
+
+input {
+  margin: 15px auto;
+  display: block;
+  width: 70%;
+  padding: 8px;
+  border: 1px solid gray;
+}
+
+.close {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  font-size: 42px;
+  color: @primary-color;
+  transform: rotate(45deg);
+  cursor: pointer;
+  &:hover {
+    color: @text-color;
+  }
+}

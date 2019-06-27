@@ -35,3 +35,13 @@ const tab2Imgs = Array.from(
 tab2Imgs.map(img => addGitIcon(img));
 
 // console.log(tab2Imgs);
+
+// Modal Functionality
+
+document.getElementById("btn").addEventListener("click", function() {
+  document.querySelector(".bg-modal").style.display = "flex";
+});
+
+document.querySelector(".close").addEventListener("click", function() {
+  document.querySelector(".bg-modal").style.display = "none";
+});
