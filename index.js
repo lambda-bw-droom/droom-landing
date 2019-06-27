@@ -34,4 +34,4 @@ const tab2Imgs = Array.from(
 );
 tab2Imgs.map(img => addGitIcon(img));
 
-console.log(tab2Imgs);
+// console.log(tab2Imgs);
