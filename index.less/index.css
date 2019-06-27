@@ -1,0 +1,352 @@
+.easeOut {
+  transition: all 0.2s ease-in;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  background: #111;
+  color: #e0fbfc;
+}
+ul {
+  list-style: none;
+}
+h1,
+h2,
+h3,
+h4 {
+  color: #ee6c4d;
+  font-family: "Teko", sans-serif;
+}
+a {
+  color: #e0fbfc;
+  text-decoration: none;
+}
+p {
+  margin: 0.5rem 0;
+}
+img {
+  width: 100%;
+}
+.showcase {
+  width: 100%;
+  height: 87vh;
+  position: relative;
+}
+.showcase::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.8);
+  box-shadow: inset 120px 100px 250px #000000, inset -120px -100px 250px #000000;
+}
+.showcase .showcase-top {
+  position: relative;
+  height: 90px;
+  z-index: 5;
+}
+.showcase .showcase-top img {
+  padding-top: 2rem;
+  width: 270px;
+  position: absolute;
+  top: 50%;
+  left: 6%;
+  transform: translate(-50%, -50%);
+}
+.showcase .showcase-top a {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(-50%, -50%);
+}
+.showcase .showcase-content {
+  position: relative;
+  margin: auto;
+  padding-top: 25vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 5;
+}
+.showcase .showcase-content h1 {
+  font-weight: 500;
+  font-size: 5.8rem;
+  line-height: 1.1;
+  margin: 0 0 2rem;
+}
+.showcase .showcase-content p {
+  text-transform: uppercase;
+  color: #e0fbfc;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 1.25;
+  margin: 0 0 2rem;
+}
+.tabs {
+  background: #293241;
+  padding-top: 1rem;
+  border-bottom: 3px solid #3d3d3d;
+}
+.tabs .container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  max-width: 70%;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 2rem;
+}
+.tabs .container div:hover {
+  color: #ee6c4d;
+  cursor: pointer;
+  transition: all 0.2s ease-in;
+}
+.tabs p {
+  font-size: 1.2rem;
+  padding-top: 0.5rem;
+}
+.tabs .tab-border {
+  border-bottom: #ee6c4d 4px solid;
+}
+.tab-content {
+  padding: 3rem 0;
+  background: #111;
+  color: #e0fbfc;
+  margin: auto;
+  width: 85%;
+  /* Hide content initially */
+}
+.tab-content #tab-1-content,
+.tab-content #tab-2-content,
+.tab-content #tab-3-content {
+  display: none;
+}
+.tab-content .show {
+  display: block !important;
+}
+.tab-content #tab-1-content .tab-1-content-inner {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 15rem;
+}
+.tab-content #tab-2-content .tab-2-content-top {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+}
+.tab-content #tab-2-content .tab-2-content-bottom {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 2rem;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+}
+.table {
+  width: 100%;
+  margin-top: 2rem;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.table thead th {
+  text-transform: uppercase;
+  padding: 0.8rem;
+}
+.table tbody {
+  display: table-row-group;
+  vertical-align: middle;
+  border-color: inherit;
+}
+.table tbody tr:nth-child(odd) {
+  background: #222;
+}
+.table tbody tr td {
+  color: #999;
+  padding: 0.8rem 1.2rem;
+  text-align: center;
+}
+.table tbody tr td:first-child {
+  text-align: left;
+}
+.foot-container {
+  background: #293241;
+  border-top: 3px solid #3d3d3d;
+}
+.foot-container .footer {
+  max-width: 75%;
+  margin: 1rem auto;
+  overflow: auto;
+  background: #293241;
+}
+.foot-container .footer a {
+  color: #e0fbfc;
+  font-size: 0.9rem;
+}
+.foot-container .footer a:hover {
+  color: #ee6c4d;
+}
+.foot-container .footer p {
+  margin-bottom: 5rem;
+}
+.foot-container .footer .footer-cols {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2rem;
+}
+.foot-container .footer li {
+  line-height: 1.9rem;
+}
+.text-xl {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.text-lg {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+.text-sm {
+  width: 100%;
+  font-size: 1.1rem;
+  text-align: left;
+  padding-bottom: 2rem;
+  color: #e0fbfc;
+}
+.text-center {
+  text-align: center;
+}
+.text-dark {
+  color: #98c1d9;
+}
+.btn {
+  display: inline-block;
+  background: #ee6c4d;
+  color: #e0fbfc;
+  padding: 0.4rem 1.3rem;
+  font-size: 1rem;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  margin-right: 0.5rem;
+  outline: none;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.45);
+  border-radius: 2px;
+}
+.btn:hover {
+  opacity: 0.8;
+  transition: all 0.2s ease-in;
+}
+.btn .btn-rounded {
+  border-radius: 5px;
+}
+.btn .btn-xl {
+  font-size: 2rem;
+  padding: 1.5rem, 2.1rem;
+  text-transform: uppercase;
+}
+.btn .btn-lg {
+  font-size: 1rem;
+  padding: 0.8rem, 1.3rem;
+  text-transform: uppercase;
+}
+@media (max-width: 960px) {
+  .showcase {
+    height: 70vh;
+  }
+  .tabs {
+    padding-bottom: 0.1rem;
+  }
+  .hide-sm {
+    display: none;
+  }
+  .showcase-top img {
+    top: 30%;
+    left: 5%;
+    transform: translate(0);
+  }
+  .showcase-content h1 {
+    font-size: 3.7rem;
+    line-height: 1;
+  }
+  .showcase-content p {
+    font-size: 1.5rem;
+  }
+  .footer .footer-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .btn-xl {
+    font-size: 5rem;
+    padding: 1.4rem 2rem;
+  }
+  .text-xl {
+    font-size: 1.5rem;
+  }
+  .text-lg {
+    font-size: 1.3rem;
+  }
+  .text-md {
+    font-size: 1rem;
+  }
+}
+@keyframes move-twink-back {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -10000px 5000px;
+  }
+}
+@keyframes move-clouds-back {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 10000px 0;
+  }
+}
+.stars,
+.twinkling,
+.clouds {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.stars {
+  background: #000 url(../img/stars.png) repeat top center;
+  z-index: 3;
+}
+.twinkling {
+  background: transparent url(../img/twinkling.png) repeat top center;
+  z-index: 3;
+  animation: move-twink-back 200s linear infinite;
+}
+.clouds {
+  background: transparent url(../img/clouds1.png) repeat top center;
+  z-index: 3;
+  animation: move-clouds-back 200s linear infinite;
+  opacity: 0.4;
+}
