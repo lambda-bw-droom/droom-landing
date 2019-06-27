@@ -142,10 +142,11 @@ img {
   align-items: center;
   text-align: center;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 15rem;
+  grid-gap: 5rem;
 }
 .tab-content #tab-1-content .tab-1-content-inner img {
   border-radius: 50px;
+  width: 100%;
 }
 .tab-content #tab-2-content .tab-2-content-bottom img {
   height: 150px;
@@ -380,11 +381,7 @@ img {
     grid-template-columns: repeat(2, 1fr);
   }
   .btn-xl {
-<<<<<<< HEAD
-    font-size: 1.5rem;
-=======
     font-size: 2rem;
->>>>>>> 6f543675d373cf96fc52abd98d1c52b398e07831
     padding: 1.4rem 2rem;
   }
   .text-xl {
