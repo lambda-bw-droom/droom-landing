@@ -1,6 +1,55 @@
 .easeOut {
   transition: all 0.2s ease-in;
 }
+.bg-modal {
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 5;
+}
+.modal-contents {
+  height: 400px;
+  width: 300px;
+  background-color: #293241;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  border-radius: 4px;
+}
+.modal-contents img {
+  width: 55%;
+}
+.modal-contents .submitBtn {
+  padding-top: 2rem;
+  font-size: 1.2rem;
+}
+.modal-contents .submitBtn:hover {
+  color: #ee6c4d;
+}
+input {
+  margin: 15px auto;
+  display: block;
+  width: 70%;
+  padding: 8px;
+  border: 1px solid gray;
+}
+.close {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  font-size: 42px;
+  color: #ee6c4d;
+  transform: rotate(45deg);
+  cursor: pointer;
+}
+.close:hover {
+  color: #e0fbfc;
+}
 * {
   box-sizing: border-box;
   margin: 0;
